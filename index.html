@@ -1,0 +1,94 @@
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Box</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+        }
+        body{
+            height: 100vh;
+            background: rgb(90, 168, 84);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .contact-me form{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 3rem;
+            margin: 1rem auto;
+            text-align: center;
+        }
+        .contact-me form textarea{
+            width: 100%;
+            padding: 0.2rem;
+            font-size: 1.3rem;
+            color: white;
+            background: #050505;
+            border-radius: 1rem;
+            border: 2px solid white;
+            margin: 1.3 0;
+            right: none;
+        }
+        .contact-me form .btn{
+            background-color:white;
+            border: 2px solid #050505 ;
+            margin-top: 2rem;
+            border-radius: 1rem;
+            font-weight: 650;
+            transition: 0.3s ease;
+            font-size: larger;
+            text-align: center;
+            width: 50%;
+        }
+        .contact-me h2{
+            font-size: medium;
+            margin-bottom:10px;
+            font-weight: 800;
+            color: rgb(244, 246, 249);
+            transition: 0.3s ease;
+        }
+        .contact-me:hover{
+            transform: scale(1.1);
+        }
+        .heading h2{
+            font-size: medium;
+            margin-bottom:10px;
+            font-weight: 800;
+            color: rgb(234, 237, 242);
+            transition: 0.8s ease;
+        }
+        .heading span{
+            color: #050505;
+           
+        }
+        .heading:hover{
+            transform: scale(1.1);
+        }
+        .contact-me form .btn:hover{
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+   <div class="contact-me" id="contact-me">
+    <h2 class="heading">LANGUAGE <span>DETECTOR</span></h2>
+    <form action="/detect_language" method="post">
+    <div class="input-group2">
+        <textarea id="input_text" name="input_text" placeholder="Enter your text" rows="4" cols="50"></textarea><br>
+        <input type="submit" value="Detect Language" class="btn">
+
+    </div>
+    </form> 
+    </div>   
+</body>
+</html>

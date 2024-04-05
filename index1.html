@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Detection Result</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+        }
+        body{
+            height: 100vh;
+            background: rgb(90, 168, 84);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .heading{
+            font-size: 50px;
+            margin-bottom:200px;
+            font-weight: 800;
+            color: rgb(244, 246, 249);
+            transition: 0.3s ease;
+            text-shadow:0 0 40px  #050505;
+        }
+        .heading:hover{
+            transform: scale(1.1);
+        }
+        .heading span{
+            color: #050505;
+        }
+        .para{
+            font-size: 30px;
+            font-weight: 800;
+            transition: 0.3s ease;
+        }
+        .para:hover{
+            transform: scale(1.1);
+        
+        }
+    </style>
+</head>
+<body>
+    <h1 class="heading">Language Detection <span> Result </span></h1>
+    <p class="para">Detected language: {{ detected_language }}</p>
+</body>
+</html>
